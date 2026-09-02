@@ -63,6 +63,12 @@ Acompanhamento do faturamento anual e do limite do MEI.
 
 Assistente que consulta e interpreta os dados armazenados localmente no aparelho.
 
+## Arquitetura
+
+O projeto segue uma arquitetura modular, organizada por features, com separação clara entre interface (presentation), lógica de aplicação (controllers/services), domínio (domain) e persistência (data/repositories).
+
+A navegação é centralizada com GoRouter, e a persistência local é feita com Drift sobre SQLite, garantindo tipagem forte nos dados armazenados no aparelho.
+
 ## Stack Tecnológica
 
 - Flutter
@@ -73,12 +79,6 @@ Assistente que consulta e interpreta os dados armazenados localmente no aparelho
 - Drift
 - SQLite
 - Git / GitHub
-
-## Arquitetura
-
-O projeto segue uma arquitetura modular, organizada por features, com separação clara entre interface (presentation), lógica de aplicação (controllers/services), domínio (domain) e persistência (data/repositories).
-
-A navegação é centralizada com GoRouter, e a persistência local é feita com Drift sobre SQLite, garantindo tipagem forte nos dados armazenados no aparelho.
 
 ## Qualidade
 

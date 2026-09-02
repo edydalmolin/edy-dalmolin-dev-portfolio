@@ -1,5 +1,9 @@
 # Cases
 
-This folder will contain individual case studies for projects included in this portfolio.
+Esta pasta reúne os estudos de caso técnicos do portfólio.
 
-Each case will describe the problem, the solution, and the technologies used.
+Cada arquivo descreve um projeto real: o problema, a solução, o produto, a arquitetura, a stack tecnológica e o papel desempenhado no desenvolvimento.
+
+Case disponível:
+
+- [MEI em Dia](mei-em-dia.md)
