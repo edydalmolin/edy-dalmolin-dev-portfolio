@@ -1,10 +1,10 @@
-# Edy Dalmolin — Developer Portfolio
+# Edy Dalmolin — Portfólio de Desenvolvimento
 
-I build practical digital products focused on mobile apps, MVPs, business systems and AI-assisted solutions.
+Desenvolvo produtos digitais práticos com foco em aplicativos mobile, MVPs, sistemas de gestão empresarial e soluções com apoio de IA.
 
-My work is centered on turning ideas and existing projects into functional, reliable and launch-ready products, with a strong focus on Flutter, Firebase, modern web technologies, APIs and product-oriented development.
+Meu trabalho é centrado em transformar ideias e projetos existentes em produtos funcionais, confiáveis e prontos para lançamento, com forte foco em Flutter, Firebase, tecnologias web modernas, APIs e desenvolvimento orientado a produto.
 
-## Main Technologies
+## Principais Tecnologias
 
 - Flutter
 - Dart
@@ -20,47 +20,47 @@ My work is centered on turning ideas and existing projects into functional, reli
 - Git / GitHub
 - Android
 - iOS
-- AI-assisted development and automation
+- Desenvolvimento e automação com apoio de IA
 
-## Types of Projects
+## Tipos de Projetos
 
-- Mobile applications for Android and iOS
-- Flutter MVPs
-- Business management applications
-- Firebase-based systems
-- Web applications and professional websites
-- API integrations
-- AI-powered features and automations
-- Bug fixing, product improvement and release preparation
+- Aplicativos mobile para Android e iOS
+- MVPs em Flutter
+- Aplicações de gestão empresarial
+- Sistemas baseados em Firebase
+- Aplicações web e sites profissionais
+- Integrações de API
+- Funcionalidades e automações com IA
+- Correção de bugs, melhoria de produto e preparação para lançamento
 
-## Featured Cases
+## Projetos em Destaque
 
 ### MEI em Dia
 
-Flutter business management application focused on helping Brazilian micro-entrepreneurs organize clients, finances, receivables, payables, agenda, budgets and business information in a simple way.
+Aplicativo Flutter de gestão empresarial voltado a ajudar microempreendedores brasileiros a organizar clientes, finanças, contas a receber, contas a pagar, agenda, orçamentos e informações do negócio de forma simples.
 
 **Stack:** Flutter · Dart · Riverpod · GoRouter · Drift · SQLite · Material 3
 
-[View case study](cases/mei-em-dia.md)
+[Ver estudo de caso](cases/mei-em-dia.md)
 
 ### Aureum Faith
 
-Mobile application focused on spiritual journaling, Bible reading, prayer, devotionals and personalized digital experiences.
+Aplicativo mobile voltado para diário espiritual, leitura bíblica, oração, devocionais e experiências digitais personalizadas.
 
-**Stack:** Flutter · Firebase · Authentication · Firestore · Local Notifications · Cloud Sync · AI-assisted features
+**Stack:** Flutter · Firebase · Authentication · Firestore · Local Notifications · Cloud Sync · funcionalidades com apoio de IA
 
-Case study coming soon.
+Estudo de caso em breve.
 
-## How I Work
+## Como Trabalho
 
-I value clear communication, clean implementation, maintainable architecture and practical delivery.
+Valorizo comunicação clara, implementação limpa, arquitetura de fácil manutenção e entrega prática.
 
-I am comfortable working on existing codebases, building new products from scratch, integrating APIs, improving application structure and preparing products for release.
+Tenho facilidade para trabalhar em bases de código existentes, construir novos produtos do zero, integrar APIs, melhorar a estrutura de aplicações e preparar produtos para lançamento.
 
-AI is part of my development workflow as a productivity and quality tool, while technical decisions, validation and final delivery remain human-reviewed.
+A IA faz parte do meu fluxo de desenvolvimento como ferramenta de produtividade e qualidade, enquanto decisões técnicas, validação e entrega final permanecem sob revisão humana.
 
-## Contact
+## Contato
 
 GitHub: https://github.com/edydalmolin
 
-Professional contact available upon request.
+Contato profissional disponível mediante solicitação.
