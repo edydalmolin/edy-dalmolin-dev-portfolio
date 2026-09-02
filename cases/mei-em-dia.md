@@ -1,163 +1,98 @@
 # MEI em Dia
 
-**Aplicativo de gestão empresarial para microempreendedores brasileiros**
+## Visão Geral
 
-MEI em Dia é um aplicativo Flutter desenvolvido para ajudar profissionais autônomos e pequenos empresários a organizar as partes mais importantes da operação diária do negócio em um só lugar.
+O MEI em Dia é um aplicativo de controle e gestão desenvolvido para microempreendedores individuais que trabalham sozinhos e precisam organizar o negócio sem a complexidade de um ERP tradicional.
 
-O produto tem foco em simplicidade, clareza e controle prático do negócio.
+**"Seu negócio em dia. Sua cabeça tranquila."**
 
-## Visão Geral do Produto
+## O Problema
 
-O aplicativo centraliza:
+Pequenos MEIs frequentemente precisam controlar entradas e saídas, contas a receber, contas a pagar, clientes, compromissos, orçamentos, faturamento anual e obrigações do MEI — mas normalmente fazem isso usando várias ferramentas, anotações ou planilhas diferentes, sem uma visão unificada do negócio.
 
-- Gestão de clientes
-- Receitas e despesas
+## A Solução
+
+O MEI em Dia centraliza essas funções em uma experiência mobile simples, permitindo que o microempreendedor acompanhe a saúde financeira e as pendências do negócio em um único lugar, direto do celular.
+
+## Principais Funcionalidades
+
+- Dashboard / visão do mês
+- Controle financeiro
+- Entradas e saídas
 - Contas a receber
 - Contas a pagar
-- Compromissos e lembretes
-- Orçamentos e propostas
-- Visão geral do negócio
-- Informações específicas do MEI e orientação financeira
-- Interação com IA para o negócio
+- Cadastro e gestão de clientes
+- Agenda
+- Orçamentos
+- Acompanhamento do faturamento anual do MEI
+- Obrigações e organização do MEI
+- Meu Assistente
+- Funcionamento com dados armazenados localmente no aparelho
+
+O Meu Assistente atualmente consulta e interpreta informações armazenadas localmente no aparelho, sem depender de serviços de IA em nuvem.
+
+## Screenshots
+
+### Visão geral do negócio
+
+![Dashboard do MEI em Dia](../assets/mei-em-dia/01-dashboard.jpg)
+
+Dashboard consolidando informações financeiras e pendências importantes do mês.
+
+### Controle financeiro
+
+![Tela financeira do MEI em Dia](../assets/mei-em-dia/02-financeiro.jpg)
+
+Visão do período com entradas, saídas e resumo financeiro.
+
+### Agenda
+
+![Tela de agenda do MEI em Dia](../assets/mei-em-dia/03-agenda.jpg)
+
+Compromissos e lembretes organizados por data e status.
+
+### Meu MEI
+
+![Tela Meu MEI do MEI em Dia](../assets/mei-em-dia/04-meu-mei.jpg)
+
+Acompanhamento do faturamento anual e do limite do MEI.
+
+### Meu Assistente
+
+![Tela do Meu Assistente do MEI em Dia](../assets/mei-em-dia/05-assistente.jpg)
+
+Assistente que consulta e interpreta os dados armazenados localmente no aparelho.
 
 ## Stack Tecnológica
 
 - Flutter
 - Dart
+- Material 3
 - Riverpod
 - GoRouter
 - Drift
 - SQLite
-- Material 3
-- Arquitetura pronta para REST
-- Android
-- iOS
-- Testes automatizados
+- Git / GitHub
 
 ## Arquitetura
 
-O projeto segue uma arquitetura modular, orientada a features, com separação clara entre as camadas de interface, lógica de negócio e dados.
+O projeto segue uma arquitetura modular, organizada por features, com separação clara entre interface (presentation), lógica de aplicação (controllers/services), domínio (domain) e persistência (data/repositories).
 
-Cada funcionalidade principal é organizada de forma independente, com controllers, repositories, modelos de domínio e responsabilidades de persistência separados para melhorar a manutenibilidade e a escalabilidade.
+A navegação é centralizada com GoRouter, e a persistência local é feita com Drift sobre SQLite, garantindo tipagem forte nos dados armazenados no aparelho.
 
-O aplicativo utiliza Drift + SQLite para persistência local tipada e Riverpod para gerenciamento de estado.
+## Qualidade
 
-A navegação é feita com GoRouter.
+O projeto conta com uma suíte de testes automatizados, incluindo testes unitários (banco de dados, domínio, repositórios) e testes de navegação e fluxo (inicialização do app, navegação principal, rotas secundárias e fluxo de assinatura).
 
-## Principais Módulos
-
-### Clientes
-
-Gestão completa de clientes com:
-
-- Criação, edição e busca
-- Informações de contato
-- Relações financeiras
-- Valores em aberto
-- Histórico do cliente
-- Interação via WhatsApp
-- Proteção contra exclusão de clientes com registros vinculados
-
-### Gestão Financeira
-
-O módulo financeiro oferece suporte a:
-
-- Receitas
-- Despesas
-- Filtragem mensal
-- Visibilidade do fluxo de caixa
-- Cálculo do resultado do negócio
-- Associação opcional com cliente
-
-### Contas a Receber e a Pagar
-
-O aplicativo inclui:
-
-- Contas a receber pendentes
-- Contas a pagar pendentes
-- Datas de vencimento
-- Acompanhamento de atrasos
-- Filtragem por status
-- Fluxo de quitação
-- Geração automática de lançamento financeiro ao quitar uma conta a receber
-
-### Agenda
-
-Os usuários podem organizar:
-
-- Compromissos
-- Lembretes de pagamento
-- Lembretes de recebimento
-- Itens concluídos e pendentes
-- Tarefas em atraso
-- Eventos vinculados a clientes
-
-### Orçamentos e Propostas
-
-O fluxo de orçamentos oferece suporte a:
-
-- Criação de rascunhos
-- Associação com cliente
-- Alterações de status
-- Estados enviado e aprovado
-- Conversão de orçamentos aprovados em contas a receber
-
-### Painel do Negócio
-
-A tela inicial consolida:
-
-- Receitas do mês
-- Despesas do mês
-- Resultado financeiro
-- Contas a receber
-- Contas a pagar
-- Próximos compromissos
-- Atalhos para orçamentos
-- Acesso ao assistente do negócio
-
-### Gestão do MEI
-
-O aplicativo inclui um módulo voltado para MEIs brasileiros com:
-
-- Visibilidade do faturamento anual
-- Monitoramento do limite de faturamento
-- Orientação sobre capital de giro
-- Obrigações do negócio
-- Configurações e informações do negócio
-
-## Qualidade e Testes
-
-O projeto inclui testes automatizados para lógica de negócio, repositories, controllers e fluxos de funcionalidades.
-
-O processo de desenvolvimento prioriza código de fácil manutenção, modularização e proteção contra regressões.
-
-## Foco no Desenvolvimento do Produto
-
-O MEI em Dia foi desenvolvido como um produto comercial real, e não como uma demonstração técnica.
-
-O processo de desenvolvimento envolveu:
-
-- Definição do produto
-- Arquitetura das funcionalidades
-- Modelagem dos dados locais
-- Regras de negócio
-- Fluxos financeiros
-- Decisões de experiência do usuário
-- Validação automatizada
-- Preparação do build para Android
-- Estrutura do projeto pronta para iOS
+A base de código também utiliza `flutter_lints` com `analysis_options.yaml` configurado, reforçando padronização e qualidade estática do código.
 
 ## Meu Papel
 
-Sou responsável pela direção do produto, pelas decisões de arquitetura, pelo fluxo de implementação, pela validação e pela evolução contínua do aplicativo.
-
-Ferramentas de desenvolvimento com apoio de IA são utilizadas para aumentar a produtividade, enquanto arquitetura, decisões de produto, testes e validação final permanecem sob revisão ativa.
+Responsável pela concepção do produto, definição de requisitos, arquitetura, validação funcional e desenvolvimento do aplicativo, utilizando ferramentas modernas de desenvolvimento e IA como apoio ao processo de engenharia.
 
 ## Status
 
-O aplicativo está em desenvolvimento ativo e em preparação para lançamento.
-
-O código-fonte permanece privado por se tratar de um produto comercial.
+O aplicativo está em desenvolvimento ativo e em preparação para lançamento. O código-fonte permanece privado por se tratar de um produto comercial.
 
 ---
 
