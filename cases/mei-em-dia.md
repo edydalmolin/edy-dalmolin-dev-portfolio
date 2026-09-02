@@ -1,26 +1,26 @@
 # MEI em Dia
 
-**Business management app for Brazilian micro-entrepreneurs**
+**Aplicativo de gestão empresarial para microempreendedores brasileiros**
 
-MEI em Dia is a Flutter application designed to help self-employed professionals and small business owners organize the most important parts of their daily operation in one place.
+MEI em Dia é um aplicativo Flutter desenvolvido para ajudar profissionais autônomos e pequenos empresários a organizar as partes mais importantes da operação diária do negócio em um só lugar.
 
-The product focuses on simplicity, clarity and practical business control.
+O produto tem foco em simplicidade, clareza e controle prático do negócio.
 
-## Product Overview
+## Visão Geral do Produto
 
-The application centralizes:
+O aplicativo centraliza:
 
-- Client management
-- Income and expenses
-- Accounts receivable
-- Accounts payable
-- Appointments and reminders
-- Budgets and quotes
-- Business overview
-- MEI-specific information and financial guidance
-- AI-assisted business interaction
+- Gestão de clientes
+- Receitas e despesas
+- Contas a receber
+- Contas a pagar
+- Compromissos e lembretes
+- Orçamentos e propostas
+- Visão geral do negócio
+- Informações específicas do MEI e orientação financeira
+- Interação com IA para o negócio
 
-## Tech Stack
+## Stack Tecnológica
 
 - Flutter
 - Dart
@@ -29,136 +29,136 @@ The application centralizes:
 - Drift
 - SQLite
 - Material 3
-- REST-ready architecture
+- Arquitetura pronta para REST
 - Android
 - iOS
-- Automated testing
+- Testes automatizados
 
-## Architecture
+## Arquitetura
 
-The project follows a modular, feature-first architecture with clear separation between UI, business logic and data layers.
+O projeto segue uma arquitetura modular, orientada a features, com separação clara entre as camadas de interface, lógica de negócio e dados.
 
-Each major feature is organized independently, with controllers, repositories, domain models and persistence responsibilities separated to improve maintainability and scalability.
+Cada funcionalidade principal é organizada de forma independente, com controllers, repositories, modelos de domínio e responsabilidades de persistência separados para melhorar a manutenibilidade e a escalabilidade.
 
-The application uses Drift + SQLite for typed local persistence and Riverpod for state management.
+O aplicativo utiliza Drift + SQLite para persistência local tipada e Riverpod para gerenciamento de estado.
 
-Navigation is handled with GoRouter.
+A navegação é feita com GoRouter.
 
-## Main Modules
+## Principais Módulos
 
-### Clients
+### Clientes
 
-Full client management with:
+Gestão completa de clientes com:
 
-- Create, edit and search
-- Contact information
-- Financial relationships
-- Outstanding amounts
-- Client history
-- WhatsApp interaction
-- Protection against deleting clients with linked records
+- Criação, edição e busca
+- Informações de contato
+- Relações financeiras
+- Valores em aberto
+- Histórico do cliente
+- Interação via WhatsApp
+- Proteção contra exclusão de clientes com registros vinculados
 
-### Financial Management
+### Gestão Financeira
 
-The financial module supports:
+O módulo financeiro oferece suporte a:
 
-- Income
-- Expenses
-- Monthly filtering
-- Cash-flow visibility
-- Business result calculation
-- Optional client association
+- Receitas
+- Despesas
+- Filtragem mensal
+- Visibilidade do fluxo de caixa
+- Cálculo do resultado do negócio
+- Associação opcional com cliente
 
-### Receivables and Payables
+### Contas a Receber e a Pagar
 
-The app includes:
+O aplicativo inclui:
 
-- Pending receivables
-- Pending payables
-- Due dates
-- Overdue tracking
-- Status filtering
-- Settlement workflow
-- Automatic financial entry generation when a receivable is settled
+- Contas a receber pendentes
+- Contas a pagar pendentes
+- Datas de vencimento
+- Acompanhamento de atrasos
+- Filtragem por status
+- Fluxo de quitação
+- Geração automática de lançamento financeiro ao quitar uma conta a receber
 
 ### Agenda
 
-Users can organize:
+Os usuários podem organizar:
 
-- Appointments
-- Payment reminders
-- Receivable reminders
-- Completed and pending items
-- Overdue tasks
-- Client-linked events
+- Compromissos
+- Lembretes de pagamento
+- Lembretes de recebimento
+- Itens concluídos e pendentes
+- Tarefas em atraso
+- Eventos vinculados a clientes
 
-### Budgets and Quotes
+### Orçamentos e Propostas
 
-The budgeting flow supports:
+O fluxo de orçamentos oferece suporte a:
 
-- Draft creation
-- Client association
-- Status changes
-- Sent and approved states
-- Conversion of approved budgets into receivables
+- Criação de rascunhos
+- Associação com cliente
+- Alterações de status
+- Estados enviado e aprovado
+- Conversão de orçamentos aprovados em contas a receber
 
-### Business Dashboard
+### Painel do Negócio
 
-The home screen consolidates:
+A tela inicial consolida:
 
-- Monthly income
-- Monthly expenses
-- Financial result
-- Receivables
-- Payables
-- Upcoming commitments
-- Budget shortcuts
-- Business assistant access
+- Receitas do mês
+- Despesas do mês
+- Resultado financeiro
+- Contas a receber
+- Contas a pagar
+- Próximos compromissos
+- Atalhos para orçamentos
+- Acesso ao assistente do negócio
 
-### MEI Management
+### Gestão do MEI
 
-The application includes a business-focused module for Brazilian MEIs with:
+O aplicativo inclui um módulo voltado para MEIs brasileiros com:
 
-- Annual revenue visibility
-- Revenue limit monitoring
-- Working capital guidance
-- Business obligations
-- Configuration and business information
+- Visibilidade do faturamento anual
+- Monitoramento do limite de faturamento
+- Orientação sobre capital de giro
+- Obrigações do negócio
+- Configurações e informações do negócio
 
-## Quality and Testing
+## Qualidade e Testes
 
-The project includes automated tests for business logic, repositories, controllers and feature workflows.
+O projeto inclui testes automatizados para lógica de negócio, repositories, controllers e fluxos de funcionalidades.
 
-The development process prioritizes maintainable code, modularization and regression protection.
+O processo de desenvolvimento prioriza código de fácil manutenção, modularização e proteção contra regressões.
 
-## Product Development Focus
+## Foco no Desenvolvimento do Produto
 
-MEI em Dia was designed as a real commercial product rather than a technical demonstration.
+O MEI em Dia foi desenvolvido como um produto comercial real, e não como uma demonstração técnica.
 
-The development process involved:
+O processo de desenvolvimento envolveu:
 
-- Product definition
-- Feature architecture
-- Local data modeling
-- Business rules
-- Financial workflows
-- User experience decisions
-- Automated validation
-- Android build preparation
-- iOS-ready project structure
+- Definição do produto
+- Arquitetura das funcionalidades
+- Modelagem dos dados locais
+- Regras de negócio
+- Fluxos financeiros
+- Decisões de experiência do usuário
+- Validação automatizada
+- Preparação do build para Android
+- Estrutura do projeto pronta para iOS
 
-## My Role
+## Meu Papel
 
-I am responsible for the product direction, architecture decisions, implementation workflow, validation and continuous evolution of the application.
+Sou responsável pela direção do produto, pelas decisões de arquitetura, pelo fluxo de implementação, pela validação e pela evolução contínua do aplicativo.
 
-AI-assisted development tools are used to increase productivity, while architecture, product decisions, testing and final validation remain actively reviewed.
+Ferramentas de desenvolvimento com apoio de IA são utilizadas para aumentar a produtividade, enquanto arquitetura, decisões de produto, testes e validação final permanecem sob revisão ativa.
 
 ## Status
 
-The application is under active development and release preparation.
+O aplicativo está em desenvolvimento ativo e em preparação para lançamento.
 
-The source code remains private because this is a commercial product.
+O código-fonte permanece privado por se tratar de um produto comercial.
 
 ---
 
-[Back to portfolio](../README.md)
+[Voltar ao portfólio](../README.md)
