@@ -1,6 +1,7 @@
 # Edy Dalmolin
 
 **Desenvolvimento de Produtos Digitais**
+
 Flutter • Mobile • Web • MVPs • IA
 
 ---
