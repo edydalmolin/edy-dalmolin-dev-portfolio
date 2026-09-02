@@ -37,11 +37,11 @@ Meu trabalho é centrado em transformar ideias e projetos existentes em produtos
 
 ### MEI em Dia
 
-Aplicativo Flutter de gestão empresarial voltado a ajudar microempreendedores brasileiros a organizar clientes, finanças, contas a receber, contas a pagar, agenda, orçamentos e informações do negócio de forma simples.
+Aplicativo de controle e gestão para microempreendedores individuais (MEI), com dados armazenados localmente no aparelho.
 
 **Stack:** Flutter · Dart · Riverpod · GoRouter · Drift · SQLite · Material 3
 
-[Ver estudo de caso](cases/mei-em-dia.md)
+[Ver estudo de caso completo](cases/mei-em-dia.md)
 
 ### Aureum Faith
 
